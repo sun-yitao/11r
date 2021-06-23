@@ -1,15 +1,14 @@
 {
-  "name": "11r",
-  "description": "america's favorite eleventy blog template",
-  "url": "https://reeseschultz.github.io",
-  "baseUrl": "/11r/",
+  "name": "Sun Yitao",
+  "description": "I blog about school and work here",
+  "url": "https://www.sunyitao.com",
+  "baseUrl": "/",
   "author": {
-    "handle": "@ReeseCodes",
-    "name": "Reese Schultz"
+    "handle": "@sun_yitao",
+    "name": "Sun Yitao"
   },
   "images": {
-    "twitter": "twitter.jpg",
-    "og": "og.jpg"
+    "twitter": "twitter.jpg"
   },
   "feed": {
     "filename": "feed.xml",

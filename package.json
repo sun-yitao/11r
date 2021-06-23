@@ -1,6 +1,6 @@
 {
-  "name": "11r",
-  "author": "Reese Schultz",
+  "name": "sunyitao",
+  "author": "Sun Yitao",
   "license": "MIT",
   "scripts": {
     "build": "cross-env NODE_ENV=production npm-run-all clean -p build:*",

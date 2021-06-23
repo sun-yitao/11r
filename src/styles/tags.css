@@ -16,7 +16,7 @@
 }
 
 .tag:before {
-  content: "#";
+  content: '#';
 }
 
 .tag.cats {
@@ -31,14 +31,14 @@
   @apply bg-blue-700;
 }
 
-.tag.spirituality {
+.tag.semester_reviews {
   @apply bg-indigo-700;
 }
 
-.tag.orcas {
+.tag.diary {
   @apply bg-purple-700;
 }
 
-.tag.stoicism {
+.tag.tech {
   @apply bg-pink-700;
 }

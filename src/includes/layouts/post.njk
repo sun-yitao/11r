@@ -9,19 +9,7 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/post/'}}{{ title | slug 
     <div>
         <h2>{{ title }}</h2>
 
-        {% if excerpt %}
-            <p class="excerpt">{{ excerpt }}</p>
-        {% endif %}
-
-        {% if tags %}
-            <div class="mb-2">
-                {% for tag in tags %}
-                    {%- if tag !== "post" -%}
-                        <a class="tag {{ tag | replace('.', '') }}" href="{{ site.baseUrl }}tag/{{ tag }}">{{ tag }}</a>
-                    {%- endif -%}
-                {% endfor %}
-            </div>
-        {% endif %}
+        
 
         {% if date %}
             {% if updatedDate and (date|string) !== (updatedDate|string) %}
@@ -37,6 +25,17 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/post/'}}{{ title | slug 
         <div class="content post">
             {{ content | safe }}
         </div>
+
+        <br>
+        {% if tags %}
+            <div class="mb-2">
+                {% for tag in tags %}
+                    {%- if tag !== "post" -%}
+                        <a class="tag {{ tag | replace('.', '') }}" href="{{ site.baseUrl }}tag/{{ tag }}">{{ tag }}</a>
+                    {%- endif -%}
+                {% endfor %}
+            </div>
+        {% endif %}
 
         {%- set nextPost = collections['postsWithoutDrafts'] | getNextCollectionItem(page) %}
         {%- if nextPost %}
